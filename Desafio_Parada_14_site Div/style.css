@@ -1,0 +1,170 @@
+* {
+  padding: auto;
+  margin: none;
+}
+#cabeçalho {
+  background-color: rgb(204, 206, 206);
+  display: flex;
+  height: 140px;
+  max-width: 100%;
+}
+#logo {
+  background-color: rgb(229, 238, 245);
+  width: 190px;
+  height: 90px;
+  display: block;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  margin-top: 0px;
+  position: absolute;
+}
+#title {
+  position: absolute;
+  height: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 70px;
+  margin-top: 20px;
+  margin-left: 40%;
+}
+input {
+  position: absolute;
+  background-color: #c9c5c5;
+  color: black;
+  height: 20px;
+  width: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 100px;
+  margin-left: 32%;
+}
+#nav {
+  background-color: white;
+  color: black;
+  text-align: center;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  height: 70px;
+  width: 100%;
+}
+.nav-conteudo {
+  background-color: #969494;
+  font-size: 20px;
+  border: 2px solid black;
+  width: 150px;
+  border-collapse: collapse;
+  margin-right: 20px;
+}
+#imagem_principal {
+  background-color: #e25959;
+  height: 400px;
+}
+.img_campo img {
+  width: 100%;
+  height: 400px;
+}
+.article_box1 {
+  background-color: white;
+  height: 500px;
+  display: flex;
+}
+.article_conteudo {
+  border: 2px solid black;
+  background-color: #c7c4c4;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  margin-left: 40px;
+  height: 250px;
+  margin-top: 100px;
+  width: 30%;
+  margin-right: 200px;
+}
+.article_img {
+  display: flex;
+  justify-content: center;
+  height: 400px;
+  width: 700px;
+  margin-top: 50px;
+}
+.article_box2 {
+  background-color: white;
+  height: 200px;
+  display: flex;
+  width: 100%;
+}
+.box2 {
+  border: 2px solid black;
+  background-color: #c7c4c4;
+  width: 95%;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  margin-left: 40px;
+  height: 150px;
+  margin-top: 20px;
+}
+
+#footer {
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #727171;
+  color: black;
+  height: 140px;
+
+  display: flex;
+}
+.footer-msg {
+  border: 1px solid black;
+  width: 350px;
+  display: flex;
+  margin-top: 20px;
+  font-size: 15px;
+  height: 100px;
+  margin-left: 20px;
+  font-size: 1vw;
+}
+.footer-conteudo {
+  background-color: #727171;
+  color: black;
+  display: inline-block;
+  margin-left: 120px;
+  line-height: 0.8;
+}
+
+/* Estilos para quando a largura da tela for igual ou menor que 700px */
+@media screen and (max-width: 1100px) {
+  .article_box1,
+  .article_box2 {
+    flex-direction: column; /* Altera a direção dos elementos para empilhá-los verticalmente */
+    align-items: center; /* Centraliza os elementos horizontalmente */
+  }
+
+  .article_conteudo,
+  .box2 {
+    margin-top: 20px; /* Espaçamento entre a imagem e o conteúdo */
+    width: 90%; /* Define a largura do conteúdo como 90% da largura da tela */
+    margin-left: auto; /* Remove a margem esquerda */
+    margin-right: auto; /* Remove a margem direita */
+  }
+  .box2 {
+    margin-top: 60px;
+    display: flexbox;
+  }
+}
+@media screen and (max-width: 720px) {
+  .box2 {
+    display: none;
+  }
+  .footer-msg {
+    display: none;
+  }
+}
