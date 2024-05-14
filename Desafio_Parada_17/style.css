@@ -1,0 +1,132 @@
+header {
+  position: relative;
+  background-color: rgb(224, 224, 221);
+  display: flex;
+  height: 80px;
+}
+.logo {
+  display: flex;
+  height: 50px;
+  width: 70px;
+}
+.menu-header {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  font-size: 45px;
+  margin: auto;
+}
+.itens-menu {
+  display: flex;
+  margin-right: 40px;
+}
+.icone-lupa {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  height: 20px;
+  width: 40px;
+}
+.botao {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  padding: 5px 30px 5px 30px;
+  font-size: 15px;
+  height: 30px;
+}
+.nav {
+  background-color: rgb(199, 202, 202);
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  font-size: 35px;
+}
+.itens-nav {
+  display: flex;
+  margin: auto;
+  color: black;
+  text-decoration: none;
+}
+.drop {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  padding: 5px 30px 5px 30px;
+  font-size: 15px;
+  height: 30px;
+}
+.dropdown {
+  display: none;
+  position: relative;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  top: 100%; /* Posiciona o dropdown abaixo do botão */
+  left: 0;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  z-index: 1;
+  border: 1px solid #ddd;
+}
+.dropdown-content a {
+  color: black;
+  padding: 10px 20px; /* Ajuste o preenchimento para espaçamento entre os itens */
+  text-decoration: none;
+  display: block;
+}
+.dropdown-content a:hover {
+  background-color: #f1f1f1; /* Adicione um efeito de destaque ao passar o mouse sobre os itens */
+}
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+.article {
+  display: flex;
+  justify-content: space-between;
+  height: 450px;
+  margin-top: 20px;
+}
+.article img {
+  max-width: 100%;
+  max-height: 100%;
+  margin-bottom: 20px;
+}
+footer {
+  background-color: #333;
+  color: #f0f0f0;
+  text-align: center;
+  padding: 10px;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+}
+
+@media screen and (max-width: 1200px) {
+  .menu-header,
+  .icone-lupa, .botao {
+    display: none;
+  }
+}
+@media screen and (max-width: 550px) {
+  .itens-nav {
+    display: none;
+  }
+  .dropdown {
+    display: flex;
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .article {
+    flex-direction: column; /* Altera a direção dos elementos para empilhá-los verticalmente */
+    align-items: center; /* Centraliza os elementos horizontalmente */
+  }
+}

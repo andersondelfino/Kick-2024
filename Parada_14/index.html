@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Exercício Display</title>
+<style>
+    .box {
+        background-color: aqua;
+        height: 200px;
+        width: 600px;
+        border: solid 2px black;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    } 
+    #box1 {
+        position: static;
+        display: inline-block;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+    }
+    #box2 {
+        display: inline-block;
+    }  
+    #box3 {
+        display:grid;
+    }
+    @media screen and (max-widht: 300px) {
+        body {
+            background-color: black
+        }
+    } /* Seu CSS aqui */
+</style>
+</head>
+<body>
+<div class="box" id="box1">Caixa 1</div>
+<div class="box" id="box2">Caixa 2</div>
+<div class="box" id="box3">Caixa 3</div>
+</body>
+</html>
+ 
