@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Eleição</title>
+  </head>
+  <body id="pagina">
+    <table id="container">
+      <tr class="titulo">
+        <td colspan="2"><h1>Cantidatos</h1></td>
+      </tr>
+      <tr class="conteudo">
+        <td>Marcos</td>
+        <td>1</td>
+      </tr>
+      <tr class="conteudo">
+        <td>Anderson</td>
+        <td>2</td>
+      </tr>
+      <tr class="conteudo">
+        <td>Devair</td>
+        <td>3</td>
+      </tr>
+      <tr class="conteudo">
+        <td>Lorena</td>
+        <td>4</td>
+      </tr>
+      <tr class="conteudo">
+        <td>Votar em branco</td>
+        <td>5</td>
+      </tr>
+      <tr class="conteudo">
+        <td>Voto Nulo</td>
+        <td>0</td>
+      </tr>
+    </table>
+
+    <button onclick="mudarCor()">Click para mudar a cor de fundo</button>
+    <script>
+      function mudarCor() {
+        let paragrafo = document.getElementById("pagina");
+        paragrafo.style.background = "aqua";
+      }
+    </script>
+    <script>
+      let pergunta = prompt("Escolha um candidado, e digite o numero!");
+      switch (pergunta) {
+        case "1":
+          alert("Parabens, voce votou no Marcos!");
+          break;
+        case "2":
+          alert("Parabens, voce votou no Anderson!");
+          break;
+        case "3":
+          alert("Parabens, voce votou no Devair!");
+          break;
+        case "4":
+          alert("Parabens, voce votou na Lorena!");
+          break;
+        case "5":
+          alert("Voce votou em Branco!");
+          break;
+        default:
+          alert("Voto Nulo");
+          break;
+      }
+    </script>
+  </body>
+</html>

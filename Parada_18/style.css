@@ -1,0 +1,15 @@
+
+#container {
+    background-color: aquamarine;
+}
+.titulo{
+    font-family: Arial, Helvetica, sans-serif;
+ }
+ .conteudo, td {
+    
+     border: 1px solid black;
+     text-align: center;
+ }
+button {
+    width: 170px;
+}
