@@ -1,0 +1,8 @@
+let numeros = prompt('digite seu numero para ser multiplicado');
+let numero = parseInt(numeros);
+
+for (let i = 0; i <= numero; i++){
+    if (i % 2 != 0){
+        console.log(i)
+    }
+}
