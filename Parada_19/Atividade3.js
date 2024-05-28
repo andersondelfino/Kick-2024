@@ -1,3 +1,4 @@
+const prompt = require("prompt-sync")();
 let senha = "anderson123";
 let tentativa
 

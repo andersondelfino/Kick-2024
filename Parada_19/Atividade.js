@@ -1,3 +1,4 @@
+const prompt = require("prompt-sync")();
 let numeros = prompt('digite seu numero para ser multiplicado');
 let numero = parseInt(numeros);
  
