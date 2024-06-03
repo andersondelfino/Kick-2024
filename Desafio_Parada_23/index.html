@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Desafio_23</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Obter Valor do Item</h1>
+    <table>
+      <tr>
+        <td id="mesa">Mesa</td>
+      </tr>
+      <tr>
+        <td id="cadeira">Cadeira</td>
+      </tr>
+      <tr>
+        <td id="sofa">Sofá</td>
+      </tr>
+    </table>
+
+    <label for="itemInput">Digite o item:</label>
+    <input type="text" id="itemInput" />
+    <button onclick="obterValor()">Obter Valor</button>
+    <p id="resultado"></p>
+
+    <script>
+     
+      const dicionario = {
+        Mesa: "100",
+        Cadeira: "50",
+        Sofá: "200",
+      };
+
+      function obterValor() {
+        const item = document.getElementById("itemInput").value;
+        const valor = dicionario[item];
+
+        if (valor !== undefined) {
+          document.getElementById(
+            "resultado"
+          ).innerText = `O valor do ${item} é ${valor}.`;
+        } else {
+          document.getElementById("resultado").innerText =
+            "Item não encontrado.";
+        }
+      }
+
+      document
+        .getElementById("itemInput")
+        .addEventListener("keypress", function (event) {
+          if (event.key === "Enter") {
+            obterValor();
+          }
+        });
+    </script>
+  </body>
+</html>
