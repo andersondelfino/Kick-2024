@@ -20,4 +20,4 @@ elif IMC <= 40.0:
     print(f"Seu indice de massa corporal é {IMC:.2f}")
     print("Obesidade grave")
 else:
-     print(f"Seu indice de massa corporal é {IMC:.2f}")
+     print("valor invalido")
